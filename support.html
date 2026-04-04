@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manki — Support</title>
+    <style>
+        :root {
+            --amber: #F59E0B;
+            --amber-light: #FEF3C7;
+            --gray-900: #111827;
+            --gray-700: #374151;
+            --gray-500: #6B7280;
+            --gray-200: #E5E7EB;
+            --gray-100: #F3F4F6;
+            --white: #FFFFFF;
+            --radius: 12px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+            color: var(--gray-900);
+            background: var(--gray-100);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 48px 24px 64px;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+
+        .header .icon {
+            font-size: 48px;
+            margin-bottom: 16px;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .header p {
+            color: var(--gray-500);
+            font-size: 16px;
+        }
+
+        /* Contact Card */
+        .contact-card {
+            background: var(--white);
+            border-radius: var(--radius);
+            padding: 32px;
+            margin-bottom: 32px;
+            text-align: center;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+        }
+
+        .contact-card h2 {
+            font-size: 20px;
+            margin-bottom: 8px;
+        }
+
+        .contact-card p {
+            color: var(--gray-500);
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .contact-card a.email-btn {
+            display: inline-block;
+            background: var(--amber);
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            padding: 14px 32px;
+            border-radius: 14px;
+            transition: opacity 0.2s;
+        }
+
+        .contact-card a.email-btn:hover {
+            opacity: 0.85;
+        }
+
+        /* FAQ */
+        .faq {
+            margin-bottom: 32px;
+        }
+
+        .faq h2 {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+
+        .faq-item {
+            background: var(--white);
+            border-radius: var(--radius);
+            margin-bottom: 12px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+            overflow: hidden;
+        }
+
+        .faq-item summary {
+            padding: 16px 20px;
+            font-weight: 600;
+            font-size: 15px;
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-item summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .faq-item summary::after {
+            content: "+";
+            font-size: 20px;
+            font-weight: 400;
+            color: var(--gray-500);
+            transition: transform 0.2s;
+        }
+
+        .faq-item[open] summary::after {
+            content: "\2212";
+        }
+
+        .faq-item .answer {
+            padding: 0 20px 16px;
+            font-size: 14px;
+            color: var(--gray-700);
+        }
+
+        /* Manage Subscription */
+        .info-card {
+            background: var(--amber-light);
+            border-radius: var(--radius);
+            padding: 24px;
+            margin-bottom: 32px;
+        }
+
+        .info-card h3 {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .info-card ol {
+            padding-left: 20px;
+            font-size: 14px;
+            color: var(--gray-700);
+        }
+
+        .info-card ol li {
+            margin-bottom: 4px;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding-top: 24px;
+            border-top: 1px solid var(--gray-200);
+            font-size: 13px;
+            color: var(--gray-500);
+        }
+
+        .footer a {
+            color: var(--gray-500);
+            text-decoration: underline;
+            margin: 0 8px;
+        }
+
+        .footer a:hover {
+            color: var(--gray-700);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="icon">&#x1F0CF;</div>
+            <h1>Manki Support</h1>
+            <p>We're here to help you learn better</p>
+        </div>
+
+        <div class="contact-card">
+            <h2>Contact Us</h2>
+            <p>Have a question, found a bug, or want to suggest a feature?<br>We'd love to hear from you.</p>
+            <a class="email-btn" href="mailto:manki.flashcards@gmail.com?subject=Manki%20Support%20Request">manki.flashcards@gmail.com</a>
+        </div>
+
+        <div class="faq">
+            <h2>Frequently Asked Questions</h2>
+
+            <details class="faq-item">
+                <summary>How does Manki work?</summary>
+                <div class="answer">
+                    Each card shows a sentence with a missing word. Tap to reveal the answer with an explanation. Swipe right if you caught it, swipe left if you missed it. Manki tracks which words you've learned so you can focus on the ones you haven't.
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>Is Manki free?</summary>
+                <div class="answer">
+                    Yes! All B1-B2 intermediate decks (6 topics, 300 cards) are completely free. Advanced C1-C2 content is available with Manki Premium.
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>What is Manki Premium?</summary>
+                <div class="answer">
+                    Manki Premium unlocks all 6 advanced C1-C2 decks with 300 additional vocabulary cards. You can start with a 7-day free trial, subscribe monthly, or purchase lifetime access with a one-time payment.
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>How do I cancel my subscription?</summary>
+                <div class="answer">
+                    Open the Settings app on your iPhone, tap your name at the top, then tap Subscriptions. Find Manki and tap Cancel Subscription. Your access continues until the end of the current billing period.
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>How do I restore my purchases?</summary>
+                <div class="answer">
+                    Open Manki, tap on any locked deck, and select "Restore Purchases" at the bottom of the screen. Make sure you're signed in with the same Apple ID you used for the original purchase.
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>Does Manki work offline?</summary>
+                <div class="answer">
+                    Yes. All your decks and progress are stored locally on your device. No internet connection is needed to study.
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>Will my progress transfer to a new device?</summary>
+                <div class="answer">
+                    Currently Manki stores data locally on your device. Cloud sync is not available yet. Purchases can be restored on a new device via "Restore Purchases."
+                </div>
+            </details>
+        </div>
+
+        <div class="info-card">
+            <h3>Manage Your Subscription</h3>
+            <ol>
+                <li>Open <strong>Settings</strong> on your iPhone</li>
+                <li>Tap your <strong>name</strong> at the top</li>
+                <li>Tap <strong>Subscriptions</strong></li>
+                <li>Select <strong>Manki</strong> to manage or cancel</li>
+            </ol>
+        </div>
+
+        <div class="footer">
+            <p>
+                <a href="https://anastasiab28.github.io/mankiapp/privacy-policy.html">Privacy Policy</a>
+                <a href="https://anastasiab28.github.io/mankiapp/terms-of-use.html">Terms of Use</a>
+            </p>
+            <p style="margin-top: 12px;">&copy; 2025 Manki. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
